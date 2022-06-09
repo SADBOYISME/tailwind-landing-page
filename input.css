@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Readex Pro", sans-serif;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white text-gray-700
+        w-72 min-h-[10rem]
+        shadow-lg rounded-md overflow-hidden;
+  }
+
+  .badge-stock {
+    @apply px-3 py-1 rounded-full text-xs bg-green-600 text-white;
+  }
+
+  .badge-official {
+    @apply px-3 py-1 rounded-full text-xs bg-orange-600 text-white;
+  }
+
+  .product-name {
+    @apply font-semibold text-2xl overflow-ellipsis overflow-hidden whitespace-nowrap;
+  }
+
+  .discount-percent {
+    @apply bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white;
+  }
+
+  .botton-add-cart {
+    @apply  rounded-md bg-white text-sm text-yellow-500/80 font-medium py-2 px-6 tracking-wider transition border-2 border-yellow-500 hover:bg-yellow-500 hover:text-white hover:border-transparent;
+  }
+
+  .botton-buy-now {
+    @apply bg-yellow-500/80 text-sm hover:bg-yellow-700/90 text-white font-medium py-2 px-6 tracking-wider transition;
+  }
+
+  .botton-icon-now {
+    @apply 
+    flex-grow 
+    flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80
+    transition rounded-md;
+  }
+}
